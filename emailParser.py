@@ -15,7 +15,7 @@ BODY        = ' '
 
 def connectToDB():
     try:
-        conn = mysql.connector.connect(host='localhost', database='candidatesdb', user='root', password='P@$$w0rd')
+        conn = mysql.connector.connect(host='localhost', database='candidatesdb', user='root', password=FROM_PWD)
         if conn.is_connected():
             print("Connection successful\n")
             return conn
